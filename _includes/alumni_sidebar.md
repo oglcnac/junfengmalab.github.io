@@ -6,7 +6,7 @@
     {% for alum in site.data.alumni %}
       <li id="{{ alum.name }}">
         <strong>{{ alum.name }}</strong>
-        <span>{{ alum.position }}</span>
+        {% if alum.position %}<span>{{ alum.position }}</span>{% endif %}
         {% if alum.startdate or alum.enddate %}<small>{% if alum.startdate %}{{ alum.startdate }} – {% endif %}{{ alum.enddate }}</small>{% endif %}
         {% if alum.current %}<small>Currently: {{ alum.current }}</small>{% endif %}
       </li>
@@ -21,7 +21,7 @@
     {% for intern in site.data.interns %}
       <li>
         <strong>{{ intern.name }}</strong>
-        <span>{{ intern.current }}</span>
+        {% if intern.current %}<span>{{ intern.current }}</span>{% endif %}
       </li>
     {% endfor %}
     </ul>
