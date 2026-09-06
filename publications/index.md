@@ -3,53 +3,64 @@ title: Publications from the Ma Lab
 layout: default
 group: publications
 ---
-## Publications  
 
-A full list of publications can be found at [Google Scholar](https://scholar.google.com/citations?hl=en&user=EiWAopQAAAAJ&view_op=list_works)
+<div class="publications-page">
+  <header class="publications-hero">
+    <span class="publications-eyebrow">Research Output</span>
+    <h1>Publications</h1>
+    <p>Selected research and review articles from the Ma Lab, spanning O-GlcNAc biology, quantitative proteomics, analytical chemistry, and biomedical applications.</p>
+    <div class="publication-actions">
+      <a class="publication-action publication-action--primary" href="https://scholar.google.com/citations?user=EiWAopQAAAAJ" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+      <a class="publication-action" href="https://orcid.org/0000-0002-5183-5425" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="publication-stats" aria-label="Publication collection summary">
+      <span><strong>{{ site.data.selected_publications.research | size }}</strong> selected research articles</span>
+      <span><strong>{{ site.data.selected_publications.reviews | size }}</strong> selected review articles</span>
+    </div>
+  </header>
 
+  {% assign publication_groups = "research,reviews" | split: "," %}
+  {% for group in publication_groups %}
+    {% if group == "research" %}
+      {% assign group_title = "Selected Research Articles" %}
+      {% assign group_kicker = "Original Research" %}
+      {% assign group_label = "Research article" %}
+    {% else %}
+      {% assign group_title = "Selected Review Articles" %}
+      {% assign group_kicker = "Perspectives & Reviews" %}
+      {% assign group_label = "Review article" %}
+    {% endif %}
+    {% assign publications = site.data.selected_publications[group] %}
 
-- **Ma J.***, Li Y., Chunyan Hou, Ci Wu. O-GlcNAcAtlas: A Database of Experimentally Identified O-GlcNAc Sites and Proteins. Glycobiology 2021, DOI: 10.1093/glycob/cwab003. 
-- **Ma J.***, Wu C., Hart G.W. Analytical and biochemical perspectives of protein O-GlcNAcylation. Chemical Reviews 2021, DOI: 10.1021/acs.chemrev.0c00884.
-- Girgis M., Li Y., **Ma J.**, Sanda M., Wise S.Y., Fatanmi O.O., Kaytor M.D., Cheema A.K., Singh V.K. Comparative proteomic analysis of serum from nonhuman primates administered BIO 300: a promising radiation countermeasure. Scientific reports 2020, 10(1), 1-11.
-- Hardivillé S., Banerjee P.S., Alpergin E.S.S., Smith D.M., Han G., **Ma J.**, Talbot C.C., Hu P., Wolfgang M.J., Hart G.W. TATA-Box Binding Protein O-GlcNAcylation at T114 Regulates Formation of the B-TFIID Complex and Is Critical for Metabolic Gene Regulation. Molecular cell 2020, 77(5), 1143-1152.e7
-- **Ma J.***, Wang W., Li Z., Shabanowitz J., Hunt D.F., Hart G.W. O-GlcNAc site mapping by using a combination of chemoenzymatic labeling, copper-free click chemistry, reductive cleavage, and electron-transfer dissociation mass spectrometry. Analytical Chemistry 2019, 91(4), 2620-2625.
-- Aldeghaither D., Zahavi D., Murray J., Fertig E., Graham G., Zhang Y.W., O'Connell A., **Ma J.**, Jablonski S., Weiner L. A mechanism of resistance to antibody-targeted immune attack. Cancer Immunology Research 2019, 7(2), 230-243. 
-- Gourgari E., **Ma J.**, Playford M.P., Mehta N.N., Goldman R., Remaley A.T., Gordon S.M. Proteomic alterations of HDL in youth with type 1 diabetes and their associations with glycemic control: a case-control study. Cardiovascular Diabetology 2019, 18, 43.
-- **Ma J.**, Sanda M., Wei R., Zhang L., Goldman R. Quantitative analysis of core fucosylation of serum proteins in liver diseases by LC-MS-MRM. Journal of Proteomics 2018, 189, 67-74.
-- Coia H., Ma N., Hou Y., Dyba M., Fu Y., Cruz M.I., Benliez C., Graham G., McCutcheon J., Zheng Y.L., Sun B., Kallakury B., **Ma J.**, Fang H.B., Berry D., Muralidaran V., Chung F.L. Prevention of lipid peroxidation-derived cyclic DNA adduct and mutation in high-fat diet-induced hepatocarcinogenesis by Theaphenon E. Cancer Prevention Research 2018, 11(10), 665-676.
-- Wang T., Chen Y., **Ma J.**, Jin Z., Chai M., Xiao X., Zhang L., Zhang Y.  A polyethyleneimine-modified attapulgite as a novel solid support in matrix solid-phase dispersion for the extraction of cadmium traces in seafood products. Talanta 2018, 180, 254-259.
-- **Ma J.**, Hart G.W. Analysis of Protein O-GlcNAcylation by Mass Spectrometry. Current Protocols in Protein Science, Wiley. 2017, UNIT 24.10. DOI: 10.1002/cpps.24
-- Wang T., **Ma J.**, Chen Y., Li Y., Zhang L., Zhang Y. Analysis of melamine and analogs in complex matrices: Advances and trends. Journal of Separation Science 2017, 40 (1), 170-182.
-- Wang T., Chen Y., **Ma J.**, Qian Q., Jin Z., Zhang L., Zhang Y. Attapulgite nanoparticles-modified monolithic column for hydrophilic in-tube solid-phase microextraction of cyromazine and melamine. Analytical chemistry 88 (3), 1535-1541.
-- **Ma J.**, Baneerj P., Whelan S., Liu T., Wei A., Ramirez-Cortrea G.A., Costello C., Mccomb M., O’Rourke B., Murphy A.M., Hart G.W. Comparative proteomics reveals dysregulated mitochondrial O-GlcNAcylation in diabetic hearts. Journal of Proteome Research 2016, 15, 2254-2264.
-- **Ma J.**, Hart G.W. Mass spectrometry-based quantitative O-GlcNAcomic analysis. Methods in Molecular Biology (in the book ‘Quantative Proteomics by Mass Spectrometry’ edited by Sechi Salvatore), Humana Press. 2016, 1410:91-103.
-- **Ma J.**, Liu T., Wei A., Baneerj P., O’Rourke B., Hart G.W. O-GlcNAcomics reveals cardiac mitochondrial functions by protein O-GlcNAcylation. Journal of Biological Chemistry 2015, 290, 29141-29153.
-- Ramirez-Cortrea G.A., **Ma J.**, Slawson C., Zeidan Q., Shen X., Gao W., Caceres V., Paolocci N., Hart G.W., Murphy A.M. Removal of abnormal myofilament O-GlcNAcylation restores Ca2+ sensitivity in diabetic cardiac muscle. Diabetes 2015, 64, 3573-3587.
-- Baneerj P., **Ma J.**, Hart G.W. Diabetes associated dysregulation of O-GlcNAcylation in rat cardiac mitochondria. Proceedings of National Academy of Sciences USA 2015, 112, 6050-6055.
-- **Ma J.**, Hart G.W. O-GlcNAc profiling: from proteins to proteomes. Clinical Proteomics 2014, 11:8.
-- Wang T., Chen Y., **Ma J.**, Hu M., Li Y., Jia Z., Fang J., Gao H. A novel ionic liquid-modified organic-polymer monolith as the sorbent for in-tube solid-phase microextraction of acidic food additives. Analytical and Bioanalytical Chemistry 2014, 406, 4955-4963.
-- Chen Y., Wang T., **Ma J.**, Liang Z., Chen M., Fang J., Gao H., Zhang L., Zhang Y. Application of an ampholine-functionalized hybrid organic–inorganic silica material for the SPE of aromatic amines. Journal of Separation Science 2014, 37, 143-150.
-- **Ma J.**, Hart G.W. Protein O-GlcNAcylation in diabetes and diabetic complications. Expert Review in Proteomics 2013, 10, 365-380.
-- Wang T., Chen Y., **Ma J.**, Chen M., Nie C., Hu M., Li Y., Jia Z., Fang J., Gao H. Ampholine-functionalized hybrid organic-inorganic silica material as sorbent for solid-phase extraction of acidic and basic compounds. Journal of Chromatography A 2013, 1308, 63-72.
-- **Ma J.**, Zhang L., Liang Z., Shan Y., Zhang Y. Immobilized enzyme reactors in proteomics. Trends in Analytical Chemistry 2011, 30(5), 691-702.
-- **Ma J.**, Hou C., Liang Y., Wang T., Zhang L., Zhang Y. Efficient proteolysis using a regenerable metal-ion chelate immobilized enzyme reactor supported on organic-inorganic hybrid silica monolith. Proteomics 2011, 11(5), 991-995.
-- Wu S., **Ma J.**, Yang K., Liu J., Liang Z., Zhang L., Zhang Y. A novel organic-inorganic hybrid monolith for trypsin immobilization. Science in China C: Life Sciences 2011, 54(1), 54-9.
-- Wang T., **Ma J.**, Wu S., Sun L., Yuan H., Zhang L., Liang Z., Zhang Y. On-line combination of monolithic immobilized pH gradient-based capillary isoelectric focusing and capillary zone electrophoresis via a partially etched porous interface for protein analysis. Journal of Chromatography B-Analytical Technologies in the Biomedical and Life Sciences 2011, 879(11-12), 804-810.
-- Hou C., **Ma J.**, Tao D., Zhang L., Liang Z., Zhang Y. Phosphorylated membrane proteomics of SY-5Y cells. Chinese Journal of Chromatography 2011, 29(9), 851-856.
-- Wang T, **Ma J.**, Wu S., Yuan H., Zhang L., Liang Z., Zhang Y. Integrated platform of capillary isoelectric focusing, trypsin immobilized enzyme microreactor and nano-reversed-phase liquid chromatography with mass spectrometry for online protein profiling. Electrophoresis 2011, 32, 2848-2856.
-- Liang Y., Tao D., **Ma J.**, Sun L., Liang Z., Zhang L., Zhang Y. Hydrophilic monolith based immobilized enzyme reactors in capillary and on microchip for high-throughput proteomic analysis. Journal of Chromatography A 2011, 1218(20), 2898-2905.
-- Wu S., Sun L., **Ma J.**, Yang K., Liang Z., Zhang L., Zhang Y. High throughput tryptic digestion via poly (acrylamide-co-methylenebisacrylamide) monolith based immobilized enzyme reactor. Talanta 2011, 83, 1748–1753.
-- Wang T., Fekete A., Gaspar A., **Ma J.**, Liang Z, Yuan H., Zhang L., Schmitt-Kopplin P., Zhang Y. Analysis of low molecular weight acids by monolithic immobilized pH gradient-based capillary isoelectric focusing coupled with mass spectrometry. Journal of Separation Science 2011, 34(4), 422-427.
-- Zhang L., Jin X., Sun L., **Ma J.**, Yang K., Liang Z., Zhang L., Zhang Y. Zirconium oxide aerogel for effective enrichment of phosphopeptides with high binding capacity. Analytical and Bioanalytical Chemistry 2011, 399, 3399-3405.
-- Sun L., Tao D., Han B., **Ma J.**, Zhu G., Liang Z., Shan Y., Zhang L., Zhang Y. Ionic liquid 1-butyl-3-methyl imidazolium tetrafluoroborate for shotgun membrane proteomics. Analytical and Bioanalytical Chemistry 2011, 399(10), 3387-3397.
-- **Ma J.**, Hou C., Sun L., Tao D., Zhang Y., Shan Y., Liang Z., Zhang L., Zhang Y. Coupling formic acid assisted solubilization and online immobilized pepsin microreactor digestion with SCX-μPRLC-ESI-MS/MS for integral membrane proteome analysis. Analytical Chemistry 2010, 82, 9622-9625.
-- Hou C., **Ma J.**, Tao D., Shan Y., Liang Z., Zhang L., Zhang Y. Organic-inorganic hybrid silica monolith based immobilized titanium ion affinity chromatography column for analysis of mitochondrial phosphoproteome. Journal of Proteome Research 2010, 9(8), 4093-4101.
-- Sun L., **Ma J.**, Sun X., Tao D., Zhang Y., Shan Y., Liang Z., Zhang L., Zhang Y. Intergrated device for online sample buffer exchange, protein enrichment, and digestion. Analytical Chemistry 2010, 82(6), 2574-2579.
-- Wang T., **Ma J.**, Zhu G., Shan Y., Liang Z., Zhang L., Zhang Y. Integration of capillary isoelectric focusing with monolithic immobilized pH gradient, immobilized trypsin microreactor and capillary zone electrophoresis for on-line protein analysis. Journal of Separation Science 2010, 33(20), 3194-3200.
-- Wu S., **Ma J.**, Yang K., Liu J., Liang Z., Zhang L., Zhang Y. An epoxy-based organic-inorganic hybrid silica monolith microreactor. Science in China C: Life Sciences 2010, 40(9), 874-879.
-- **Ma J.**; Liu J., Sun L., Gao L., Liang Z., Zhang L., Zhang Y. On-line integration of multiple sample pretreatment steps involving denaturation, reduction, and digestion with microflow reversed-phase liquid chromatography-electrospray ionization tandem mass spectrometry for high throughput proteome profiling. Analytical Chemistry 2009, 81, 6534-6540.
-- **Ma J.**, Zhang L., Liang Z., Zhang W., Zhang Y. Recent advances in immobilized enzymatic reactors and their applications in proteome analysis. Analytica Chemica Acta 2009, 632, 1-8.
-- Qiao X., Wang L., **Ma J.**, Deng Q., Liang L., Zhang L., Peng X., Zhang Y. High sensitivity analysis of water-soluble, cyanine dye labeled proteins by high-performance liquid chromatography with fluorescence detection. Analytica Chimica Acta 2009, 114-120.
-- Tao D., Zhu G., Sun L., **Ma J.**, Liang Z., Zhang W., Zhang L., Zhang Y. Serially coupled microcolumn reversed phase liquid chromatography for shotgun proteomic analysis. Proteomics 2009, 2029-2036.
-- **Ma J.**, Liang Z., Qiao X., Deng Q., Tao D., Zhang L., Zhang Y. Organic-inorganic hybrid silica monolith based immobilized trypsin reactor with high enzymatic activity. Analytical Chemistry 2008, 80, 2948-2956.
-- **Ma J.**, Zhang L., Liang Z., Zhang W., Zhang Y. Monolith-based immobilized enzyme reactors: Recent developments and applications for proteome analysis. Journal of Separation Science 2007, 30, 3050-3059.
+    <section class="publication-section publication-section--{{ group }}" aria-labelledby="{{ group }}-articles-heading">
+      <div class="publication-section-heading">
+        <div>
+          <span class="publications-eyebrow">{{ group_kicker }}</span>
+          <h2 id="{{ group }}-articles-heading">{{ group_title }}</h2>
+        </div>
+        <span class="publication-count">{{ publications | size }} articles</span>
+      </div>
+
+      <div class="publication-list">
+      {% for publication in publications %}
+        <article class="publication-card"{% if publication.pmid %} id="pmid-{{ publication.pmid }}"{% endif %}>
+          <div class="publication-card-number" aria-hidden="true"></div>
+          <div class="publication-card-content">
+            <div class="publication-meta"><span>{{ publication.year }}</span><span>{{ group_label }}</span></div>
+            <p class="publication-authors">{{ publication.authors }}</p>
+            <h3>{{ publication.title }}</h3>
+            <p class="publication-source">{{ publication.source }}</p>
+            <div class="publication-links">
+              {% if publication.doi %}<a href="https://doi.org/{{ publication.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+              {% if publication.pmid %}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ publication.pmid }}/" target="_blank" rel="noopener">PMID {{ publication.pmid }}</a>{% endif %}
+              {% if publication.pmcid %}<a href="https://pmc.ncbi.nlm.nih.gov/articles/{{ publication.pmcid }}/" target="_blank" rel="noopener">{{ publication.pmcid }}</a>{% endif %}
+            </div>
+          </div>
+        </article>
+      {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+
+  <p class="publication-note"><sup>*</sup> Corresponding author &nbsp;·&nbsp; <sup>#</sup> Co-first author</p>
+</div>
