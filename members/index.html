@@ -4,41 +4,50 @@ layout: members-w-Alumni
 group: members
 ---
 
-<h1>Ma Lab Members</h1>
+<div class="members-heading">
+  <span class="members-eyebrow">Our Team</span>
+  <h1>Ma Lab Members</h1>
+  <p>Meet the researchers advancing our work in proteomics, glycobiology, and molecular medicine.</p>
+</div>
 
+<div class="members-grid">
 {% for person in site.data.members %}
-<hr>
-<!-- The paddingtop and margin-top edits allow anchors to link properly. -->
-<div id = "{{person.name}}" class="row" style="padding-top: 60px; margin-top: -60px;">
-    <div class="col-sm-4">
-        <img class="img-responsive" src="{{person.image}}" {% if person.altimage %} onmouseover="this.src='{{person.altimage}}';" onmouseout="this.src='{{person.image}}';" {% endif %} alt="{{person.name}}"><br>
-    </div>
-    <div class="col-sm-8">
-      <strong>{{person.name}}</strong> <br>
-      {{person.position}} <br>
-      {% if person.email %}<em>{{person.email}}</em> <br>{% endif %}
-      <br>
-      {% if person.website %}
-          <a href= "{{person.website}}">{{person.website}}</a> <br>
-        {% endif %}
+{% if person.email or person.edu1 or person.edu2 or person.edu3 %}
+  {% assign card_type = "member-card--profile" %}
+{% else %}
+  {% assign card_type = "member-card--compact" %}
+{% endif %}
+<article id="{{ person.name }}" class="member-card {{ card_type }}">
+  <div class="member-portrait">
+    {% if person.image %}
+      <img src="{{ person.image }}" alt="{{ person.name }}" {% if person.altimage %}onmouseover="this.src='{{ person.altimage }}';" onmouseout="this.src='{{ person.image }}';"{% endif %}>
+    {% else %}
+      <div class="member-avatar" aria-hidden="true">
+        {% assign name_parts = person.name | split: " " %}
+        {% for part in name_parts %}{{ part | slice: 0 }}{% endfor %}
+      </div>
+    {% endif %}
+  </div>
 
-        {% if person.edu1 %}
-          - {{person.edu1}} <br>
-        {% endif %}
-        {% if person.edu2 %}
-        - {{person.edu2}} <br>
-      {% endif %}
-      {% if person.edu3 %}
-      - {{person.edu3}} <br>
+  <div class="member-details">
+    <h2>{{ person.name }}</h2>
+    <p class="member-position">{{ person.position }}</p>
+
+    {% if person.email %}<a class="member-email" href="mailto:{{ person.email }}">{{ person.email }}</a>{% endif %}
+    {% if person.website %}<a class="member-website" href="{{ person.website }}">{{ person.website }}</a>{% endif %}
+
+    {% if person.edu1 or person.edu2 or person.edu3 %}
+      <ul class="member-education">
+        {% if person.edu1 %}<li>{{ person.edu1 }}</li>{% endif %}
+        {% if person.edu2 %}<li>{{ person.edu2 }}</li>{% endif %}
+        {% if person.edu3 %}<li>{{ person.edu3 }}</li>{% endif %}
+      </ul>
     {% endif %}
 
-        {% if person.scholar %}
-          <a href= "http://scholar.google.com/citations?user={{person.scholar}}"> Scholar Citations </a> <br>
-        {% endif %}
-        {% if person.twitter %}
-          <a href= "http://twitter.com/{{person.twitter}}"> @{{person.twitter}} </a> <br>
-        {% endif %}
-        <p class="text-justify">{{person.description | markdownify}}</p>
-    </div>  
-</div>
+    {% if person.scholar %}<a href="https://scholar.google.com/citations?user={{ person.scholar }}">Scholar Citations</a>{% endif %}
+    {% if person.twitter %}<a href="https://twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a>{% endif %}
+    {% if person.description %}<div class="member-description">{{ person.description | markdownify }}</div>{% endif %}
+  </div>
+</article>
 {% endfor %}
+</div>
