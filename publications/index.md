@@ -6,16 +6,10 @@ group: publications
 
 <div class="publications-page">
   <header class="publications-hero">
-    <span class="publications-eyebrow">Research Output</span>
     <h1>Publications</h1>
-    <p>Selected research and review articles from the Ma Lab, spanning O-GlcNAc biology, quantitative proteomics, analytical chemistry, and biomedical applications.</p>
     <div class="publication-actions">
       <a class="publication-action publication-action--primary" href="https://scholar.google.com/citations?user=EiWAopQAAAAJ" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
       <a class="publication-action" href="https://orcid.org/0000-0002-5183-5425" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>
-    </div>
-    <div class="publication-stats" aria-label="Publication collection summary">
-      <span><strong>{{ site.data.selected_publications.research | size }}</strong> selected research articles</span>
-      <span><strong>{{ site.data.selected_publications.reviews | size }}</strong> selected review articles</span>
     </div>
   </header>
 
