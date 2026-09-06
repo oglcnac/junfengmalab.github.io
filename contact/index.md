@@ -14,7 +14,7 @@ group: contact
   <h4>Junfeng Ma, Ph.D.</h4>
   Associate Professor  <br>
   Department of Oncology  <br>
-  Department of Biochemistry  <br>
+  Department of Biochemistry and Molecular &amp; Cellular Biology  <br>
   Georgetown University Medical Center  <br>
   Email: junfeng.ma@georgetown.edu  <br>
   Tel: 202-687-3802

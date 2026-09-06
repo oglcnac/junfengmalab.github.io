@@ -5,6 +5,13 @@ body {
   /*padding-top: 80px;*/
   /*padding-top: 50px; /* this was to make it the same height as the navbar so there is no gap between navbar and header image -- changed back now though*/
   padding-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 .members-page {
@@ -34,8 +41,8 @@ body {
 .members-heading p {
   margin: 0;
   color: #667085;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 .members-grid {
@@ -619,7 +626,7 @@ body {
   max-width: 780px;
   margin: 0;
   color: #dceafa;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.65;
 }
 .publication-actions, .publication-stats, .publication-meta, .publication-links {
@@ -734,7 +741,7 @@ body {
   border-left: 3px solid #003882;
   color: #667085;
   background: #f6f8fb;
-  font-size: 13px;
+  font-size: 16px;
 }
 @media (max-width: 600px) {
   .publications-page { padding-top: 28px; }
