@@ -17,7 +17,7 @@ We maintain [oglcnac.org](https://oglcnac.org/) (including [O-GlcNAcAtlas](https
 
 ### Equipment
 
-The Ma lab currently hosts 5 sets of HPLC/UPLC systems (including nanoAcquity from Waters and Ultimate 3000 from Dionex), 4 sets of state-of-the-art mass spectrometers (including TripleTOF 6600 from Sciex, Q-TRAP 6500 from Sciex and Orbitrap Fusion Lumos from Thermo Fisher Scientific), among others. 
+The Ma Lab houses state-of-the-art mass spectrometers, including a Bruker timsTOF Ultra 2, a Thermo Scientific Orbitrap Fusion Lumos, and SCIEX TripleTOF 6600 and QTRAP 6500 systems. The lab also maintains HPLC and UPLC systems, including a Bruker nanoElute 2, Waters ACQUITY UPLC M-Class and nanoACQUITY UPLC systems, and a Dionex UltiMate 3000 system.
 
 <br>
 
