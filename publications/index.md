@@ -6,7 +6,10 @@ group: publications
 
 <div class="publications-page">
   <header class="publications-hero">
-    <h1>Publications</h1>
+    <div class="publications-heading">
+      <h1>Publications</h1>
+      <span class="publication-record">Full publication record: &gt;110 publications</span>
+    </div>
     <div class="publication-actions">
       <a class="publication-action publication-action--primary" href="https://scholar.google.com/citations?user=EiWAopQAAAAJ" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
       <a class="publication-action" href="https://orcid.org/0000-0002-5183-5425" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>

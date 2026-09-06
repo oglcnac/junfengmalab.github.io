@@ -726,6 +726,13 @@ p {
   font-family: "Lucida Bright", Georgia, serif;
   font-size: 38px;
 }
+.publication-record {
+  display: block;
+  margin-top: 2px;
+  color: #dceafa;
+  font-size: 14px;
+  line-height: 1.4;
+}
 .publication-actions, .publication-meta, .publication-links {
   display: flex;
   flex-wrap: wrap;

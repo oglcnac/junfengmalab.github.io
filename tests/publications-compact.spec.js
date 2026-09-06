@@ -6,6 +6,7 @@ test('publications page presents a compact header and article list', async ({ pa
   const hero = page.locator('.publications-hero');
   await expect(hero).not.toContainText('Research Output');
   await expect(hero).not.toContainText('selected research articles');
+  await expect(hero.getByText('Full publication record: >110 publications', { exact: true })).toBeVisible();
   await expect(hero.locator('p')).toHaveCount(0);
   await expect(hero.locator('.publication-actions a')).toHaveCount(2);
 
