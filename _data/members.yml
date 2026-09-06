@@ -7,20 +7,21 @@
   edu2: PhD. Analytical Chemistry (Dalian Institute of Chemical Physics, Chinese Academy of Sciences)
   edu3: Post-Doc. Biological Chemistry (Johns Hopkins University School of Medicine)
 
-- name: Ci Wu
-  image: /static/img/members/ciwu.jpg
+- name: Chunyan Hou
+  image: /static/img/members/chunyan-hou.png
   position: Research Scientist
-  email: cw1056@georgetown.edu
-  edu1: B.S. Applied Chemistry (Huazhong University of Science and Technology) 
+  email: ch1363@georgetown.edu
+  edu1: B.S. Chemistry (Xiamen University)
   edu2: PhD. Analytical Chemistry (Dalian Institute of Chemical Physics, Chinese Academy of Sciences)
 
-- name: Shiyun Zhou
-  image: /static/img/members/shiyun.jpeg
-  position: Graduate Research Assistant
-  email: sz530@georgetown.edu  
+- name: Deeksha Surisetty
+  image: /static/img/members/placeholder.jpg
+  position: Research Assistant
 
-- name: Shiwei (Cindy) Liang 
-  image: /static/img/members/shiwei.jpg
-  position: Graduate Research Assistant
-  email: sl1731@georgetown.edu
+- name: Leon Wang
+  image: /static/img/members/placeholder.jpg
+  position: Research Assistant
 
+- name: Mustafa Kilicarslan
+  image: /static/img/members/placeholder.jpg
+  position: Research Assistant

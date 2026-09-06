@@ -1,6 +1,6 @@
 ---
 title: Ma Lab Members
-layout: members
+layout: members-w-Alumni
 group: members
 ---
 
@@ -16,7 +16,7 @@ group: members
     <div class="col-sm-8">
       <strong>{{person.name}}</strong> <br>
       {{person.position}} <br>
-      <em>{{person.email}}</em> <br>
+      {% if person.email %}<em>{{person.email}}</em> <br>{% endif %}
       <br>
       {% if person.website %}
           <a href= "{{person.website}}">{{person.website}}</a> <br>
