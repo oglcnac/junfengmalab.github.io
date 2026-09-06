@@ -9,9 +9,9 @@ group: resources
 <br>
 
 
-### Database server O-GlcNAcAtlas
+### O-GlcNAc databases and servers
 
-We maintain O-GlcNAcAtlas (<a href="https://oglcnac.org/">oglcnac.org</a>), the most comprehensive and highly curated database encapsulating all experimentally identified O-GlcNAc sites and proteins in the past decades. We hope it can serve as a great resource to facilitate protein O-GlcNAcylation studies for basic and translational biomedical research.
+We maintain [oglcnac.org](https://oglcnac.org/) (including [O-GlcNAcAtlas](https://oglcnac.org/atlas/), [OGT-PIN](https://oglcnac.org/ogt-pin/), [HexNAcQuest](https://oglcnac.org/hexnac-quest/), and [O-GlcNAcPRED-DL](https://oglcnac.org/pred_dl/)), a comprehensive and rigorous platform for protein O-GlcNAcylation. We hope it can serve as a great resource to facilitate protein O-GlcNAcylation studies for basic and translational biomedical research.
 
 <br>
 
